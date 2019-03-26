@@ -1,0 +1,33 @@
+﻿@model User
+Already registered? <a href="/login">Login Here</a>
+<h1>Register</h1>
+<form action="create" method="POST">
+<div class="form-group">
+    <span asp-validation-for="Fname"></span>
+    <label asp-for="Fname">First Name</label>
+    <input asp-for="Fname">
+</div>
+
+<div class="form-group">
+    <span asp-validation-for="Lname"></span>
+    <label asp-for="Lname">Last Name</label>
+    <input asp-for="Lname">
+</div>
+
+<div class="form-group">
+    <span asp-validation-for="Email"></span>
+    <label asp-for="Email">Email</label>
+    <input asp-for="Email">
+</div>
+<div class="form-group">
+    <span asp-validation-for="Password"></span>
+    <label asp-for="Password">Password</label>
+    <input asp-for="Password">
+</div>
+<div class="form-group">
+    <span asp-validation-for="Confirm"></span>
+    <label asp-for="Confirm">Confirm</label>
+    <input asp-for="Confirm">
+</div>
+    <input type="submit" value="Register">
+</form>
